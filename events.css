@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fff;
+  color: #000;
+  line-height: 1.6;
+  max-width: 1200px;
+}
+.header {
+  background-image: url("images/alex-radelich-Evo4wmtRaPI-unsplash\ copy.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: blur(2px);
+}
+.header-logo {
+  width: 550px;
+  filter: drop-shadow(4px 3px 2px #262626);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-container {
+  max-width: auto;
+  margin-top: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.item {
+  background: #f75936;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  border: #eb502d 2px solid;
+  font-family: "Raleway";
+  font-weight: 500;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.item:hover {
+  background-color: #ed401ae8;
+}
+
+.active {
+  background-color: black;
+}
+/* 
+header {
+
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 60px;
+
+} */
+/* .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  min-height: 8vh;
+} */
+/* .logo {
+  height: 70px;
+  width: 70px;
+
+} */
+/* .logo img {
+  width: 100%;
+}
+nav {
+  flex: 1;
+  text-align: right;
+} */
+/* nav ul {
+  display: inline;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+} */
+/* nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  nav ul li a:hover {
+    background-color: lightcoral;
+    border-radius: 50%;
+    color: aliceblue;
+  } */
+/* nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px;
+} */
+/* nav ul li a:hover {
+  background: darkblue;
+  transition: 0.5s;
+  border-radius: 50%;
+  color: aliceblue;
+} */
+.mobile {
+  display: none;
+}
+.mobile div {
+  width: 25px;
+  height: 5px;
+  background-color: #000;
+  margin: 5px;
+}
+
+.slide.current {
+  opacity: 1;
+}
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+.buttons button#next {
+  position: absolute;
+  top: 100%;
+  right: 15px;
+}
+.buttons button#prev {
+  position: absolute;
+  top: 100%;
+  left: 15px;
+}
+.buttons button {
+  border: 2px solid #000;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer; /*when hovering*/
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+.buttons button:hover {
+  background-color: rgb(200, 37, 37);
+  color: #fff;
+}
+.slider {
+  position: relative; /* because we will position absoulte some stuff in the slider */
+  overflow: hidden;
+  height: 85vh;
+  width: 100%;
+}
+.slide {
+  position: absolute;
+  /*We will start from top left*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /*By default , to change with javascript */
+  transition: opacity 0.4s ease-in-out;
+}
+/*Because slide and current are assigned together*/
+.slide.current {
+  opacity: 1;
+}
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+.title {
+  /* margin: 40px; */
+  padding: 40px;
+  background-color: #0476d9;
+  color: white;
+}
+.title h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.slide .content h1 {
+  font-size: 30px;
+  /* margin-bottom: 10px; */
+}
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px); /*Because it was -600px*/
+  transition: all 0.7s ease-in-out 0.3s;
+}
+.protest {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* margin-top: 40px; */
+}
+.event {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  background-color: #0476d9;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+.event:hover {
+  background-color: aqua;
+  color: #000;
+}
+
+/* .protest article {
+  background-color: darkblue;
+  color: white;
+  padding: 40px;
+} */
+.protest section h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.protest figure img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.protest section p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.event .temp {
+  font-size: 20px;
+}
+.event .weather {
+  font-size: 20px;
+  font-weight: bold;
+  /* color: black; */
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
+.detail img {
+  width: 75px;
+}
+.slide:first-child {
+  background: url("images/protest1.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(2) {
+  background: url("images/protest2.jpg") no-repeat center center/cover;
+}
+.slide:nth-child(3) {
+  background: url("images/protest3.jpg") no-repeat center center/cover;
+}
+.hidden {
+  display: none;
+}
+/* .detail {
+  background-color: #0476d9;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.detail:hover {
+  background-color: aqua;
+} */
+/* .weath {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+} */
+
+/* .weath .temp {
+  margin: 30px;
+} */
+/* .weath .weather {
+  margin: 30px;
+} */
