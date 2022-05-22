@@ -1,0 +1,149 @@
+body{
+    background-color:  #C7F7F4;
+}
+.header{
+    background-image: url("images/alex-radelich-Evo4wmtRaPI-unsplash\ copy.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: blur(2px);
+}
+
+.header-logo {
+    width: 550px;
+    filter: drop-shadow(4px 3px 2px #262626);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}
+.nav-container {
+    max-width: auto;
+    margin-top: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item {
+    background: #F75936;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: #eb502d 2px solid;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.item:hover {
+    background-color: #ed401ae8;
+}
+
+.active {
+    background-color: black;
+}
+
+/* a {
+    text-decoration: none;
+    
+} */
+/* .navbar .nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+} */ 
+/* .active{
+    color: white;
+} */
+fa-solid fa-person{
+margin: 20px;
+}
+
+
+
+.founders{
+   text-align: center;
+}
+
+.founders1{
+    justify-content: space-evenly;
+}
+
+
+
+
+.org-image img {
+    width: 450px;
+    margin-left: 450px;
+    
+}
+.grid-container{
+    margin-left: 10px;
+}
+.grid-container div{
+    text-align: center;
+}
+div .grid-container{
+    margin-left: -100px;
+}
+/* flex box for images */
+.Protest-images{
+display: flex;
+flex-direction: row;
+ justify-content: center; 
+gap: 20px;
+
+}
+.Protest-images img {
+    width: 700px;
+   
+}
+
+.Protest1 img{
+    width: 405px;
+    height: 299px;
+} 
+.Protest2 img{
+    width: 405px;
+    height: 299px;
+ } 
+
+/* footer css */
+  
+#footer {
+    font-size: 15px;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  color: #000000;
+
+  font-family: 'Caveat';
+
+  text-align: center;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+div .footer-links{
+    background-color: #F75936;
+}
+
