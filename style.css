@@ -1,0 +1,146 @@
+body {
+    background-color: #c7f7f4;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #0476d9
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -20px;
+    color: #eb502d;
+}
+
+p {
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 10px 10px lightblue;
+
+}
+
+.header {
+    background-image: url(/imgs/alex-radelich-Evo4wmtRaPI-unsplash.jpg);
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: blur(2px);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header-logo {
+    width: 550px;
+    filter: drop-shadow(4px 3px 2px #262626);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.nav-container {
+    max-width: auto;
+    margin-top: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.item {
+    background: #F75936;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border: #eb502d 2px solid;
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+
+.item a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.item:hover {
+    background-color: #ed401ae8;
+}
+
+.active {
+    background-color: black;
+}
+
+section {
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: rgb(160, 222, 255) 1.5px solid;
+}
+
+
+.box {
+    align-items: center;
+    padding: 50px;
+    width: 80%;
+    font-size: 18px;
+
+}
+
+.box li {
+    background-color: rgb(222, 245, 251);
+    box-shadow: 10px 8px lightblue;
+    margin-left: 30px;
+}
+
+
+.box2 {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.box2 li {
+    background-color: rgb(222, 245, 251);
+    box-shadow: 10px 8px lightblue;
+    padding-bottom: 8px;
+}
+
+.box2 a {
+    /* display: block;*/
+    color: #0476d9;
+    text-decoration: none;
+}
+
+.box2 :hover {
+    color: #eb502d;
+}
