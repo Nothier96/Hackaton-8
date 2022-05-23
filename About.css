@@ -62,19 +62,7 @@ a {
     background-color: black;
 }
 
-/* a {
-    text-decoration: none;
-    
-} */
-/* .navbar .nav-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 65px;
-} */ 
-/* .active{
-    color: white;
-} */
+
 fa-solid fa-person{
 margin: 20px;
 }
@@ -88,8 +76,6 @@ margin: 20px;
 .founders1{
     justify-content: space-evenly;
 }
-
-
 
 
 .org-image img {
@@ -116,34 +102,52 @@ gap: 20px;
 }
 .Protest-images img {
     width: 700px;
-   
+    margin: 75px;
 }
 
 .Protest1 img{
-    width: 405px;
-    height: 299px;
+    width: 425px;
+    height: 305px;
 } 
 .Protest2 img{
-    width: 405px;
-    height: 299px;
+    width: 425px;
+    height: 305px;
  } 
 
 /* footer css */
   
-#footer {
-    font-size: 15px;
-  height: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
-  color: #000000;
-
-  font-family: 'Caveat';
-
-  text-align: center;
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-}
-div .footer-links{
-    background-color: #F75936;
+footer {
+    bottom:0;
+    left:0;
+    padding-bottom: 20px;
+    position:relative;
+    width:100%;
+    font-family: 'Raleway';
+    text-align:center;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+li {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+} 
+   
+.footer-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}   
+   
+.footer-menu{
+    margin-top: 100px;
+    position: relative;
+}
