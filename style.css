@@ -144,3 +144,45 @@ section {
 .box2 :hover {
     color: #eb502d;
 }
+
+/*footer*/
+footer {
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    font-family: 'Raleway';
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer li {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    width: 100%;
+}
+
+.footer-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.footer-menu {
+    margin-top: 100px;
+    position: relative;
+}
