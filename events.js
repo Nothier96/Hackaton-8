@@ -78,24 +78,18 @@ $.getJSON(
   }
 );
 
-const events = document.querySelectorAll(".event");
-const detail = document.querySelectorAll(".detail");
+const event1 = document.getElementById("1");
+const event2 = document.getElementById("2");
+const event3 = document.getElementById("3");
+const detail1 = document.getElementById("detail1");
+const detail2 = document.getElementById("detail2");
+const detail3 = document.getElementById("detail3");
 
-function showDetail() {
-  for (let i = 0; i < detail.length; i++) {
-    detail[i].classList.remove("hidden");
-  }
-}
-function hideDetail() {
-  for (let i = 0; i < detail.length; i++) {
-    detail[i].classList.add("hidden");
-  }
-}
 
-events.forEach(function (article) {
-  article.addEventListener("mouseover", showDetail);
-  article.addEventListener("mouseout", hideDetail);
+event1.addEventListener("mouseover", showDetail(){
+    detail1.classList.remove('hidden')
 });
+event1.addEventListener("mouseout", hideDetail);
 
 // for (let i = 0; i < events.length; i++) {
 //   events[i].addEventListener("mouseover", showDetail);
