@@ -356,3 +356,40 @@ nav ul li {
 /* .weath .weather {
   margin: 30px;
 } */
+footer {
+  bottom: 0;
+  left: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+  font-family: "Raleway";
+  text-align: center;
+  background-color: #0476d9;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: inline;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.footer-menu {
+  margin-top: 100px;
+  position: relative;
+}
