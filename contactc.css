@@ -1,5 +1,10 @@
 body {
     background-color: #c7f7f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: 'Raleway';
+    font-weight: 300;
 }
 
 .header {
@@ -97,11 +102,12 @@ body {
 }
 
 .form {
-    position: relative;
-    margin-left: 50%;
-    transform: translate(-50%, -80%);
-    text-align: center;
-    margin-top: 320px;
+    /* transform: translate(-50%, -80%);
+    text-align: center; */
+    /* position: relative; */
+
+    margin: 40px;
+    margin-left: 350px;
     background-color: white;
     border: 20px solid white;
     filter: drop-shadow(2px 3px 4px #686767);
@@ -141,4 +147,54 @@ button {
     display: inline-block;
     font-size: 16px;
     color: #fff;
+}
+
+.footer-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.footer-menu {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.copy {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.phone {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: right;
+    align-content: right;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 25px;
+    margin-top: 437px;
+    margin-bottom: 200px;
+    border-radius: 20%;
+    max-height: 500px;
+    line-height: 1.8;
+}
+
+@media (max-width: 500px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
 }
