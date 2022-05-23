@@ -10,7 +10,7 @@ body {
   background: #fff;
   color: #000;
   line-height: 1.6;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 .header {
   background-image: url("images/alex-radelich-Evo4wmtRaPI-unsplash\ copy.jpg");
