@@ -81,15 +81,31 @@ $.getJSON(
 const event1 = document.getElementById("1");
 const event2 = document.getElementById("2");
 const event3 = document.getElementById("3");
-const detail1 = document.getElementById("detail1");
-const detail2 = document.getElementById("detail2");
-const detail3 = document.getElementById("detail3");
+const detail1 = document.querySelector(".detail1");
+const detail2 = document.querySelector(".detail2");
+const detail3 = document.querySelector(".detail3");
 
-
-event1.addEventListener("mouseover", showDetail(){
-    detail1.classList.remove('hidden')
+event1.addEventListener("mouseover", function () {
+  detail1.classList.remove("hidden");
 });
-event1.addEventListener("mouseout", hideDetail);
+event1.addEventListener("mouseout", function () {
+  detail1.classList.add("hidden");
+});
+event2.addEventListener("mouseover", function () {
+  detail2.classList.remove("hidden");
+});
+event2.addEventListener("mouseout", function () {
+  detail2.classList.add("hidden");
+});
+event3.addEventListener("mouseover", function () {
+  detail3.classList.remove("hidden");
+});
+event3.addEventListener("mouseout", function () {
+  detail3.classList.add("hidden");
+});
+
+// event1.addEventListener("mouseover", showDetail(detail1));
+// event1.addEventListener("mouseout", hideDetail(detail1));
 
 // for (let i = 0; i < events.length; i++) {
 //   events[i].addEventListener("mouseover", showDetail);
